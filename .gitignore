@@ -1,0 +1,41 @@
+# Lista blanca: solo se versionan las tres versiones de tsexplorer y los
+# ficheros de la raíz del repositorio. Todo lo demás (código y datos de
+# referencia de la raíz, matlab/, notas de trabajo, .scratch/) queda fuera.
+/*
+!/.gitignore
+!/.gitattributes
+!/.github/
+!/README.md
+!/LICENSE
+!/r/
+!/python/
+!/matlab-new/
+
+# R
+/r/.Rproj.user/
+/r/.Rhistory
+/r/.RData
+/r/.Ruserdata
+/r/*.Rcheck/
+/r/*.tar.gz
+/r/Rplots.pdf
+/r/tests/testthat/Rplots.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+/python/build/
+/python/dist/
+*.egg-info/
+.pytest_cache/
+
+# MATLAB
+*.asv
+*.mex*
+slprj/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*

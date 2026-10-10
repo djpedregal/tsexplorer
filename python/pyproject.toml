@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tsexplorer"
+version = "0.1.0"
+description = "Exploratory, descriptive and diagnostic tools for time series and forecasts"
+readme = "README.md"
+license = "GPL-3.0-only"
+authors = [{ name = "Diego J. Pedregal", email = "diego.pedregal@uclm.es" }]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "pandas>=2.0", "matplotlib>=3.7"]
+
+[project.urls]
+Homepage = "https://github.com/djpedregal/tsexplorer"
+Source = "https://github.com/djpedregal/tsexplorer/tree/main/python"
+Issues = "https://github.com/djpedregal/tsexplorer/issues"
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+tsexplorer = ["data/csv/*.csv", "data/tables/*.csv"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"

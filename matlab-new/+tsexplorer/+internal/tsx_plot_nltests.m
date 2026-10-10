@@ -1,0 +1,9 @@
+function tsx_plot_nltests(x, f)
+%TSX_PLOT_NLTESTS Plot of nltests (plot.tsx_nltests in R): ACF and PACF of
+%   the squared data (no seasonal lags).
+t = x.table;
+tsexplorer.internal.tsx_plot_correlogram(f, t.lag, [t.acf, t.pacf], [t.se_acf, t.se_pacf], ...
+    max(t.lag) + 2, ...
+    ["Series " + x.series + ": Sample Autocorrelation Function of Squared Data", ...
+     "Series " + x.series + ": Sample Partial Autocorrelation Function of Squared Data"]);
+end

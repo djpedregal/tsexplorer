@@ -1,0 +1,43 @@
+Package: tsexplorer
+Type: Package
+Title: Exploratory, Descriptive and Diagnostic Tools for Time Series and Forecasts
+Version: 0.1.0
+Authors@R: c(
+    person("Diego J.", "Pedregal", email = "diego.pedregal@uclm.es",
+           role = c("aut", "cre", "cph")),
+    person("Ludwig", "Kanzler", role = "ctb",
+           comment = "Original BDS test algorithm"))
+Description: Exploratory, descriptive and diagnostic tools for univariate
+    and multivariate time series (summary statistics, gaussianity tests,
+    sample autocorrelation functions, information criteria, Granger
+    causality, unit root and cointegration tests, heteroskedasticity and
+    non-linearity tests, spectral analysis) and tools to evaluate and
+    compare forecasts (accuracy measures, Diebold-Mariano, sign and Wilcoxon
+    tests). Every tool is a pure function returning an object with print and
+    plot methods; the graphical interfaces tooltest() and toolforecast()
+    (Tcl/Tk windows or Shiny applications) give interactive access to all
+    of them.
+License: GPL-3
+URL: https://github.com/djpedregal/tsexplorer
+BugReports: https://github.com/djpedregal/tsexplorer/issues
+Encoding: UTF-8
+LazyData: true
+Depends:
+    R (>= 4.1.0)
+Imports:
+    graphics,
+    grDevices,
+    stats,
+    utils
+Suggests:
+    shiny,
+    tcltk,
+    testthat (>= 3.0.0),
+    jsonlite,
+    tseries,
+    urca,
+    xts,
+    zoo
+Config/testthat/edition: 3
+Roxygen: list(markdown = TRUE)
+Config/roxygen2/version: 8.1.0
