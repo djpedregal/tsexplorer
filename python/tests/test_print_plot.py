@@ -181,6 +181,9 @@ def test_display_in_ipython_without_windows(capsys):
 
 
 def _tk_available():
+    import os
+    if os.environ.get("TSX_NO_TK"):   # no usable display (e.g. macOS CI runners)
+        return False
     try:
         import tkinter as tk
         root = tk.Tk()

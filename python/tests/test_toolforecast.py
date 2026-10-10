@@ -139,6 +139,9 @@ def test_toolforecast_with_several_series():
 
 
 def _tk_available():
+    import os
+    if os.environ.get("TSX_NO_TK"):   # no usable display (e.g. macOS CI runners)
+        return False
     try:
         import tkinter as tk
         root = tk.Tk()

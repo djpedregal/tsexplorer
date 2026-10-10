@@ -18,7 +18,11 @@ jobs:
           - {os: ubuntu-latest,  python: '3.10'}
           - {os: ubuntu-latest,  python: '3.14'}
           - {os: windows-latest, python: '3.14'}
-          - {os: macos-latest,   python: '3.14'}
+          # Tk crashes on the macOS runners (no GUI session): skip the window tests
+          - {os: macos-latest,   python: '3.14', no_tk: '1'}
+
+    env:
+      TSX_NO_TK: ${{ matrix.no_tk }}
 
     defaults:
       run:

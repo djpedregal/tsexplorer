@@ -77,6 +77,9 @@ def _examples(fun):
 
 
 def _tk_available():
+    import os
+    if os.environ.get("TSX_NO_TK"):   # no usable display (e.g. macOS CI runners)
+        return False
     try:
         import tkinter as tk
         root = tk.Tk()

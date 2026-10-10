@@ -56,8 +56,8 @@ toolforecast <- function(y, py, stdpy = NULL, origin = 0, names = NULL, level = 
                          gui = c("tcltk", "shiny"), launch.browser = TRUE) {
   gui <- match.arg(gui)
   tsx_check_level(level)
-  tsx_check_gui(gui)
   a <- tsx_forecast_align(y, py, stdpy, origin, names)
+  tsx_check_gui(gui)
   if (gui == "tcltk") {
     return(invisible(toolforecast_tk(y, py, stdpy, origin, names, a, level)))
   }
