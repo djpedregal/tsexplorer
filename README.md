@@ -24,7 +24,7 @@ results (`r/inst/extdata/reference`).
 | [`python/`](https://github.com/djpedregal/tsexplorer/tree/main/python) | Python package | tkinter | Python >= 3.10, numpy, scipy, pandas, matplotlib |
 | [`matlab-new/`](https://github.com/djpedregal/tsexplorer/tree/main/matlab-new) | MATLAB functions | `uifigure` | MATLAB, no toolboxes |
 
-## Installation from GitHub
+## Installation
 
 **R** (from an R session; the Tcl/Tk interface needs no extra packages, the
 Shiny one needs `shiny`):
@@ -36,7 +36,14 @@ library(tsexplorer)
 ```
 
 **Python** (Python >= 3.10, from a terminal; numpy, scipy, pandas and
-matplotlib are installed as dependencies):
+matplotlib are installed as dependencies), from
+[PyPI](https://pypi.org/project/tsexplorer/):
+
+```sh
+pip install tsexplorer
+```
+
+or the development version from GitHub:
 
 ```sh
 pip install "git+https://github.com/djpedregal/tsexplorer.git#subdirectory=python"

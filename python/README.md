@@ -19,7 +19,13 @@ interfaces).
 
 ## Installation
 
-From GitHub:
+From [PyPI](https://pypi.org/project/tsexplorer/):
+
+```sh
+pip install tsexplorer
+```
+
+The development version, from GitHub:
 
 ```sh
 pip install "git+https://github.com/djpedregal/tsexplorer.git#subdirectory=python"
