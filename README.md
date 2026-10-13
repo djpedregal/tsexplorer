@@ -42,7 +42,10 @@ matplotlib are installed as dependencies):
 pip install "git+https://github.com/djpedregal/tsexplorer.git#subdirectory=python"
 ```
 
-**MATLAB** (no toolboxes needed): download the repository
+**MATLAB** (R2021a or later, no toolboxes needed): install the toolbox
+from *Add-Ons > Get Add-Ons* (search for `tsexplorer`) or from the `.mltbx`
+file of the [releases of tsexplorer-matlab](https://github.com/djpedregal/tsexplorer-matlab/releases);
+or download the repository
 ([ZIP](https://github.com/djpedregal/tsexplorer/archive/refs/heads/main.zip))
 or clone it, and add the folder `matlab-new` to the path:
 

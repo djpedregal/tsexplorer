@@ -31,15 +31,27 @@ these functions.
 
 ## Installation
 
-Download the [GitHub repository](https://github.com/djpedregal/tsexplorer)
-([ZIP](https://github.com/djpedregal/tsexplorer/archive/refs/heads/main.zip))
-or clone it (`git clone https://github.com/djpedregal/tsexplorer.git`), and
-add this folder (`matlab-new`, not `+tsexplorer`) to the path:
+MATLAB R2021a or later (tested on R2026b), no toolboxes.
+
+**As a toolbox** (recommended): in MATLAB, *Add-Ons > Get Add-Ons*, search
+for `tsexplorer` and click *Add* (it comes from MATLAB Central File
+Exchange); or download `tsexplorer-<version>.mltbx` from the
+[releases](https://github.com/djpedregal/tsexplorer-matlab/releases) and
+open it in MATLAB. The toolbox is added to the path and can be updated or
+uninstalled from the Add-On Manager.
+
+**From the source code**: download
+[tsexplorer-matlab](https://github.com/djpedregal/tsexplorer-matlab)
+(only the MATLAB version) or the folder `matlab-new` of
+[tsexplorer](https://github.com/djpedregal/tsexplorer) (R, Python and
+MATLAB), and add that folder (not `+tsexplorer`) to the path:
 
 ```matlab
 addpath('path/to/tsexplorer/matlab-new')
 savepath   % optional: keep it in the path for future sessions
 ```
+
+`packaging/package_toolbox.m` builds the `.mltbx` file.
 
 ## Use
 
@@ -158,4 +170,12 @@ matlab -batch "run_tests"
 
 The tests (`tests/test_*.m`) compare the results with stored reference
 results and with independent computations (mean relative difference
-1e-6).
+1e-6). The reference results are shared with the R and Python versions
+(`r/inst/extdata/reference`), so the tests run from a clone of the
+[tsexplorer repository](https://github.com/djpedregal/tsexplorer), not
+from the toolbox or from tsexplorer-matlab.
+
+The repository [tsexplorer-matlab](https://github.com/djpedregal/tsexplorer-matlab),
+linked to File Exchange, is a copy of the folder `matlab-new` of
+[tsexplorer](https://github.com/djpedregal/tsexplorer), where the
+development takes place (issues and pull requests there, please).
