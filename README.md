@@ -1,4 +1,4 @@
-# tsexplorer
+# tsexplorer <img src="r/man/figures/logo.png" align="right" height="139" alt="tsexplorer logo" />
 
 Diego J. Pedregal (Universidad de Castilla-La Mancha). License GPL-3.
 
