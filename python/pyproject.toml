@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "tsexplorer"
 version = "0.1.0"
-description = "Exploratory, descriptive and diagnostic tools for time series and forecasts"
+description = "Exploratory and diagnostic tools for time series and forecasts"
 readme = "README.md"
 license = "GPL-3.0-only"
 authors = [{ name = "Diego J. Pedregal", email = "diego.pedregal@uclm.es" }]

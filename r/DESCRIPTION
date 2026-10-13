@@ -1,6 +1,6 @@
 Package: tsexplorer
 Type: Package
-Title: Exploratory, Descriptive and Diagnostic Tools for Time Series and Forecasts
+Title: Exploratory and Diagnostic Tools for Time Series and Forecasts
 Version: 0.1.0
 Authors@R: c(
     person("Diego J.", "Pedregal", email = "diego.pedregal@uclm.es",
@@ -8,15 +8,25 @@ Authors@R: c(
     person("Ludwig", "Kanzler", role = "ctb",
            comment = "Original BDS test algorithm"))
 Description: Exploratory, descriptive and diagnostic tools for univariate
-    and multivariate time series (summary statistics, gaussianity tests,
-    sample autocorrelation functions, information criteria, Granger
-    causality, unit root and cointegration tests, heteroskedasticity and
-    non-linearity tests, spectral analysis) and tools to evaluate and
-    compare forecasts (accuracy measures, Diebold-Mariano, sign and Wilcoxon
-    tests). Every tool is a pure function returning an object with print and
-    plot methods; the graphical interfaces tooltest() and toolforecast()
-    (Tcl/Tk windows or Shiny applications) give interactive access to all
-    of them.
+    and multivariate time series and tools to evaluate and compare
+    forecasts: summary statistics and gaussianity tests; sample
+    autocorrelation functions with the Ljung and Box (1978)
+    <doi:10.1093/biomet/65.2.297> and Monti (1994) <doi:10.2307/2337080>
+    tests; information criteria and Granger (1969) <doi:10.2307/1912791>
+    causality; unit root tests of Dickey and Fuller (1979)
+    <doi:10.1080/01621459.1979.10482531> and Phillips and Perron (1988)
+    <doi:10.1093/biomet/75.2.335>; the cointegration test of Johansen (1988)
+    <doi:10.1016/0165-1889(88)90041-3>; heteroskedasticity tests;
+    non-linearity tests of McLeod and Li (1983)
+    <doi:10.1111/j.1467-9892.1983.tb00373.x>, Tsay (1986)
+    <doi:10.1093/biomet/73.2.461> and Brock, Dechert, Scheinkman and LeBaron
+    (1996) <doi:10.1080/07474939608800353>; spectral analysis; and forecast
+    accuracy measures with the Diebold and Mariano (1995)
+    <doi:10.1080/07350015.1995.10524599>, sign and Wilcoxon tests. Every
+    tool is a pure function returning an object with print and plot
+    methods; the graphical interfaces tooltest() and toolforecast()
+    ('Tcl/Tk' windows or 'shiny' applications) give interactive access to
+    all of them.
 License: GPL-3
 URL: https://github.com/djpedregal/tsexplorer
 BugReports: https://github.com/djpedregal/tsexplorer/issues
