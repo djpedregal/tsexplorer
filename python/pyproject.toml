@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=61"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,7 +8,21 @@ version = "0.1.0"
 description = "Exploratory and diagnostic tools for time series and forecasts"
 readme = "README.md"
 license = "GPL-3.0-only"
+license-files = ["LICENSE"]
 authors = [{ name = "Diego J. Pedregal", email = "diego.pedregal@uclm.es" }]
+keywords = ["time series", "forecasting", "econometrics", "unit root",
+            "cointegration", "autocorrelation", "spectral analysis",
+            "forecast evaluation", "Diebold-Mariano"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Education",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
 requires-python = ">=3.10"
 dependencies = ["numpy>=1.24", "scipy>=1.10", "pandas>=2.0", "matplotlib>=3.7"]
 
